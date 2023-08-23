@@ -1,0 +1,180 @@
+html defines the structure of the webpage
+css enables us to design the webpage
+js help us to animate our page :like motion,form validations
+---------------
+tags are important in html
+
+two main important tags in html
+head :data about the webpage is present in head tag
+    META DATA:title,keywords,description,icon,styles,scripts that are used.
+    
+body:it is displayed on webpage
+
+TAGS ARE two types
+
+container type tags:tags which can contain other tags :h1,h2...
+non-container type tags:that cannot contain other tags :<hr>
+
+
+ATTRIBUTES:provide information about the tags
+always written in pair: [name="value"] -name of the attribite ,value of the attribute
+is writtern in the starting tag :style attribite,id,class
+
+LINKS:with the help of anchor tags we move from onepage to another
+they are called hyperlinks
+<a href="www.gogole.com" target="_blank"/>link to second page</a>
+href is the attribite of anchor tag
+with the help of target attribute you can decide to open the page in new tab or in the same page
+
+
+IMAGES::
+img is non container tag 
+
+attributes of img tag
+src:source file of the image
+title:gives the title of the image when you hover
+alt:if image is not available then the text in alt attribute is displayed.
+with the help of height and width we can adjust the size of the image
+    <img style="height: 300px; width: 500px;" src="images/pic2.jpg"  title="school pic" alt="image not available">
+
+
+BUTTON TAGS:3 types
+
+if type=submit it is submit BUTTON
+if type=reser it is reset BUTTON
+if type=normal it is normal BUTTON
+with the help of js we can control the button
+
+
+LISTS:ordered and unordered
+
+we can change the bullets of the li items in UNORDERED LIST using
+<ul style="list-style-type:circle;">
+we can change it from circle to square, disc,...
+
+ORDERED LIST LI ITEM can be changed using type
+<ol type="a">
+<li>apple</li>
+<li>apple</li>
+</ol>
+
+
+TEXT-FORMATIMNG
+<b></b> for bold
+string for strong
+sub tag for down  as log to the base 10
+sup tag for up as 2 to the power of 2
+
+TABLE:
+table tag has tr for rows and td for column
+th for heading
+for border we need to use border attribite and give it a value
+
+SELECTORS
+
+    -tag SELECTORS we can target an element with the help of tag 
+    <style>
+    li{
+        color:blue;
+    }
+    </style>
+    <style>
+    h1{
+        color:red
+    }
+    </style>
+    it will change all the tags with h1 into red color
+    body{},....
+
+    -class SELECTORS
+    add class attribite to the tage you want to target
+    class-"target1"
+    in head style section
+    <style>
+    .target1{
+        #this is the selector for class and you edit it as you like
+    }
+    </style>
+
+-id selectors allow you to add an id to an element and then style it
+#idname{
+    attributename:attributeValue;
+}
+
+HTML code can have multiple class selectors but only one ID SELECTOR**
+
+FORM
+form has two important attributes
+form is used to collect data from user
+and the action* attribute of form determines where the data submitted by the user goes-destination address
+action="destination address"
+ we can gives servlet or php or jsp here in action
+-method it has two options -get -post
+-GET: is not secure,
+      it cannot hold more data-limited data,
+     data is visible in the url
+POST:is secure 
+    -can send unlimited data
+    -data is visible in url
+prefer post than get
+
+tags in form
+-input tag:to take input from user
+    it has type="": attribute:text,password,number,date,...
+    placeholder:default display text
+    name ="" to represent the input data field backend this name attr is useful,-to fetch data on server 
+    input="radio" for radio_buttons for these buttons they have same name="gender" 
+
+Dropdown:
+    <selector multiple></selector> tag is used to get dropdown
+    and to show names in the list use <option> </option> tag.
+    multiple is used to select multiple options when used in combination with size attr
+
+type="Checkbox":
+    type:checkbox
+
+    type="submit" for submit button
+    type="reset" for reset button
+
+-textarea is a container tag -takes multi-line input and use it style or rows,cols to adjust heigh and width
+
+-value attr is used for default data-user will not be edit this data,and it will reach database if it is readonly 
+    <td><input type="text" name="user_name" value="Sindhu" readonly placeholder="enter your name here"></td>
+or else 
+if it is diabled it will not reach backend
+    <td><input type="text" name="user_name" value="Sindhu" disabled placeholder="enter your name here"></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

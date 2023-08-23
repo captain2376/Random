@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: black;
+            background: linear-gradient(to right,rgb(181, 252, 228),rgb(177, 240, 177));
+        }
+        li{
+            color: blue;
+        }
+        .red-color{
+            color:red;
+        }
+        #id-selector{
+            color: brown;
+            font-size: 2rem;
+        }
+        .heading{
+            color: green;
+            text-align: center;
+            text-decoration: dashed;
+        }
+        #register-form{
+            margin: auto;
+        }
+
+        #register-form tr,td,input,select,textarea{
+            font-size: 20px;
+        }
+        #register-form{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Form learning</h1>
+    <form action="register.jsp">
+        <table id="register-form">
+            <tr>
+                <td>ENTER NAME</td>
+                <td><input type="text" name="user_name" value="Sindhu" readonly placeholder="enter your name here"></td>
+            </tr>
+            <tr>
+                <td>ENTER PASSWORD</td>
+                <td><input type="password" name="user_password" placeholder="enter password here"></td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="radio" name="gender"> Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>SELECT COURSE</td>
+                <td><select name="course" id="" size="4">
+                    <option value="java">Java Programming</option>
+                    <option value="python">Python Programming</option>
+                    <option value="C">C language</option>
+                    <option value="kotlin">kotlin language</option>    
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>ENTER ADDRESS </td>
+                <td>
+                    <textarea name="address" id="" cols="30" rows="10" placeholder="enter address here"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;""><input type="checkbox" ></td>
+                <td>Accept term and conditions</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <ul>
+        <li class="red-color">red</li>
+        <li>red</li>
+        <li>red</li>
+        <li class="red-color">red</li>
+        <li>red</li>
+        <li>fair</li>
+        <li id="id-selector">hair</li>
+        <li>pair</li>
+    </ul>
+</body>
+</html>

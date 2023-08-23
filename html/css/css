@@ -1,0 +1,102 @@
+html is used to decide the structure of webpage
+css is used to style the websites:good looking
+CSS-describes how html elements should be displayed on screen
+using media-queries  :responsive websites can be made
+it makes easy to design 
+
+SYNTAX:
+selector{
+    property:value
+}
+h1{
+    color:red;
+}
+selecotor-:id,class,tag
+
+----
+<style></style> tag in head section of the html page is used for CSS
+
+THERE ARE 3 WAYS TO INCLUDE CSS IN A webpage
+
+1.INLINE CSS
+along with the element:in the start tag of the element
+<h1 style="border: 1px  solid skyblue ;">Hello</h1>
+
+2.INTERNAL CSS IN HEAD SECTION only in the same page
+<head>
+<style>
+    h2{
+        color: black;
+    }
+</style>
+</head>
+
+3.EXTERNAL CSS -can be used to style multiple pages
+write the css in other file with .css extension
+and to include it in the required html file add link tag in the head section
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+rel-realation
+href-file location
+style.css-
+h1{
+    color:pink;
+}
+
+SELECTOR 
+
+-TAG SELECTOR 
+-class selector :assign a class to the element and using .class selector design that
+-id selector :assign id to element and using #id selector add css to that element
+ID IS UNIQUE FOR EVERY WEBPAGE 
+
+*-UNIVERSAL Selector
+h2,h3{
+    group Selector
+}
+
+BOX MODEL
+space between :content and border:padding
+border and outside:margin 
+width and height and can be adjust accordingly
+if width=100% then it will take full page(parent container)
+example-a container has another container and its width is 50% then it will occupy half of the 
+parent container width ,same with height.
+
+margin:auto :margin is calculated automatically and adjusted to center of the page
+
+VH:viewport height--100vh height of the webpage:occupies whole page height
+VW:viewport width --100vw width of the webpage:ocuupes whole page width 
+
+max-width:100px its width can't be more than 100px irrespective of browser size
+min-height:100px min is 100px max can be more than 100
+
+margin is divided into top(t),bottom(b),left(l),right(r)
+margin:20px:all t,b,l,r  sides
+margin:20px (t,b) 20px(l,r)
+margin:1px (top),(right),(bottom),(left)
+
+Background-image
+    background-image: url(images/img1.jpg);
+    background-repeat: no-repeat;//image should repeat or not is decided
+    background-position: right top;used to fix position
+    background-attachment: fixed; //scrollable or not is decided :fixed ->background is attached
+
+all properties in-one-line:
+background: azure url(images/img1.jpg) no-repeat right top fixed;
+
+two colour mix:
+LINEAR GRADIENT
+
+TEXT FORMATTING
+color: cadetblue;
+text-align: center;
+text-decoration: underline overline;
+text-transform: lowercase;//CHANge the case of the text 
+text-indent: 40px;
+/* space between letters */
+letter-spacing: 5px;
+word-spacing: 3px;
+/* text-shadow: horizontal vertical color; */
+text-shadow: 3px 0px greenyellow;
