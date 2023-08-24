@@ -1,0 +1,50 @@
+.heading{
+    background: rgb(248, 50, 50);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.image{
+    max-width: 100px;
+
+}
+.room{
+    background: pink;
+    /* important set display:flex; */
+    display: flex;
+    /* arranges items in a row:display: flex; */
+    flex-direction: row;
+    /* row: left to right:main axis
+    top to bottom :cross axis */
+    /*flex-direction 
+    row:left to right
+    row-reverse:right to left */
+    flex-wrap: wrap;
+    /* items are aligned in next line according to browser size */
+    justify-content: space-around; 
+    /* align in main axis-justify content */
+    /* adjust the content */
+    align-items: flex-start;
+    /* align item in cross axis top to bottom */
+    /* align-items: baseline; aligns the item based on text */
+}
+.box{
+    background: cornsilk;
+    margin: 15px;
+}
+/* //hellp */
+.box1{
+    /* order: 1; */
+    /* flex-grow: 1; */
+}
+.box2{
+    /* order: 2; */
+    /* flex-grow: 1; */
+    align-self: flex-start;
+
+}
+.box3{
+    /* order: 3 ; */
+    /* flex-grow: 6; */
+
+}

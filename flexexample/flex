@@ -1,0 +1,41 @@
+flex-diretion:row
+X- axis is main axis and can be set using justify content
+Y- axis is cross axis and can be set using align items
+
+flex-diretion:column
+Y axis is main axis and can be set using justify content
+X- axis is cross axis and can be set using align items
+
+
+PARENT :ROOM
+CHILD:BOX
+if parent has display flex in its style then children can be ordered using order tag
+eg:class="box box1"
+eg:class="box box2"
+<style>
+    .box1{
+        order:3
+    }
+    .box2{
+        order:2
+    }
+    .box3{
+        order:1
+    }
+</style>
+also increse the size of children using flex-grow
+.box1{
+    order: 3;
+    flex-grow: 1;
+}
+.box2{
+    order: 1;
+    flex-grow: 1;
+
+}
+
+similar properties like
+flex-shrink:1;
+flex-basis:200px;//increase or decrease width
+short hand flex: 0 0 200px;
+"grow,shrink.basis:
