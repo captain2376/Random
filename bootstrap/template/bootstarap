@@ -1,0 +1,48 @@
+index.html for HTML
+style.css for CSS linked to html by <link rel="stylesheet" href="css/style.css">
+script.js for JAVASCRIPT linked to html by <script src="js/script.js"></script>
+output -browser
+
+BOOTSTRAP : is the popular html,css and javascript framework for developing 
+a responsive and mobile-friendly website
+<div class="container">
+    //for webistes with left and right equal margin
+</div>
+<div class="container-fluid">
+    //for full page webistes   
+</div>
+
+BOOTSTRAP GRID SYSTEM 
+ bootstrap grid  allows to structure the layout that are mobile-friendly too
+
+<div class="row">
+    //____________________________this is row in bootstrap___________
+    horizontal space bar
+    in a row there are total 12 grids
+    //1_2_3_4_5_6_7_8_9_10_11_12
+-when we create a row bootstrap provides us 12 grids.
+
+</div>
+we have an image and text -both of them should cover 50% and 50%
+now in bootstrap we divide row into 6-image,6-text (6,6-cols)
+we can also divide these 12 cols into different pairs(1,1,..)(2,2,)(3,3,3,3),(4,4,4)(3,5,4),..as needed
+
+MORE ON GRID SYSTEM AND DEVICES-LG,SM,,MD,*==ALL
+col-  ==[<576px] col-6 then it will take 6 cols on mobile and it applies al other small medium and large devices
+col-sm ==[>=576 px] then it will have 6 cols on landscape phones and its higher devices but 12 on [<576 px] devices
+col-md ==[>=768px ] then it will have 6 cols on meduim devices(tablets) and its higher devices but 12 on [<768 px] devices
+col-lg ==[>=992px] then it will have 6 cols on meduim devices(tablets) and its higher devices but 12 on [<992 px] devices
+col-xl ==[>=1200px ] then it will have 6 cols on meduim devices(tablets) and its higher devices but 12 on [<1200 px] devices
+
+BUTTON :bootstrap provides with different button class along with colour and oultine
+class="btn btn-primary"
+class="btn btn-outline-primary"
+
+CARD :bootstrap provides us with templates of cards prebuild
+
+all the basic templates are available on
+"BOOTSTRAP WEBSITE"= https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+there are two ways to include bootstrap in your webpage
+1.offline dowload and link it.1
+2.with the help of cdn link -"content delivery network" which we can link it to our page.2 
