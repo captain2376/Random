@@ -46,3 +46,21 @@ all the basic templates are available on
 there are two ways to include bootstrap in your webpage
 1.offline dowload and link it.1
 2.with the help of cdn link -"content delivery network" which we can link it to our page.2 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+here in this we can change bg-body-colour for bg colour ; and navbar-colour for text colour change
+<ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+here if it is me-it will be on left and if ms-on right
+
+
+ container and container-fluid has different views
+
+ <div class="col-md-6 offset-md-3">
+--content occupies half of the webpage space from medium and above devices and whole space 
+on below medium devices 
+offset-md-3==implies that 3 cols from start are empty and 3 cols from end are empty  
+it is like indent in front and back of the content
+
+
+background: url(https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg);
+    background-size: cover;
+    /* it will fit the image into webpage  */
