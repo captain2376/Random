@@ -1,0 +1,146 @@
+javascript is a client side programming language
+client side programming:It is a program that runs on client machine(browser) and deals with the
+user interface /display and any other processing  that can happen on client machine like reading/writing cookies
+We use js to build dynamic webprojects like DOM manipulation,form validation,animation,...
+Browser and an editor is enough for learning js.
+to execute -browser ;to write -editor
+
+To include javascript in html file include script tag before the end of the body tag
+<body>
+    <h1>Learn JavaScript</h1>
+
+    <script>
+        
+    </script>
+</body>
+and in script tag we can only write javascript 
+to display the content written b/w script tag to display on webpage use--write function:
+    document.write("Hello World..!")
+write is function in javascrpit
+we can include html tags in write function
+
+
+comments in js
+single line: //hello
+multiline /*hello*/
+
+writing js using scrpit tag with in html page is internal javascrpit
+writing js in .js file and linking it with html using src is external js
+
+EXTERNAL JS
+    <script src="myjs.js"></script>
+
+alert("helllo") :: is a built-in function that displays a small dialog box with a message to the user. 
+it can be written as 
+--alert("hellp")
+--window.alert("jio")
+
+WE can also use console present on the browser to write js
+;-"semi-colon" is optional in js 
+
+
+PROMPTS function is another built-in method that allows you to interact with the user by displaying a dialog box. 
+However, unlike the alert function, which only displays a message and an "OK" button, the prompt function lets you display a message along with a text input field where the user can enter information.
+
+1.    document.write(prompt("Enter username"))
+
+2.var name=prompt("enter username")
+document.write(name)
+
+CONFIRM function is another built-in method that provides a way to interact with the user through a dialog box. Similar to the alert and prompt functions,
+the confirm function displays a dialog box, but in this case, it presents the user with a confirmation question and provides two buttons: "OK" and "Cancel."
+ 
+    confirm("Would you like to exit?")
+
+"Do you want to continue?" and the buttons "OK" and "Cancel." If the user clicks "OK," the confirm function will return true to the result variable. If the user clicks "Cancel," the function will return false.
+
+    document.write(confirm("Would you like to exit?"))
+
+
+TO ADD DYNAMIC CONTENT:
+html page:    <h1 id="my-content"></h1>
+.js :   document.getElementById("my-content").innerHTML="This is dynamic content"
+
+
+VARIABLES   ::
+to declare variables in js use var keyword
+var a=9
+to know the type of variable
+document.write(typeof a)
+
+NEW ES6 features enable to us to use let keyword to declare variable 
+-let is a keyword used to declare variables within a block scope. It was introduced in ECMAScript 6 (ES6)   and provides an alternative to the var keyword for declaring variables.
+- Unlike variables declared with var, variables declared with let have block scope, meaning they are limited to the block, statement, or expression where they are defined.
+
+DIFFERENCES B/W var and let
+
+Scope: Variables declared with var have function scope or global scope, while variables declared with let have block scope.
+
+Hoisting: Both var and let declarations are hoisted to the top of their containing block, but variables declared with var are initialized with the value undefined by default, while variables declared with let are not initialized until the line where they are declared is executed.
+
+Re-declaration: Variables declared with var can be re-declared within the same scope, whereas variables declared with let cannot be re-declared within the same block scope.
+
+KEYWORDS -words which are predefined in the language and cannot be used as variables
+IDENTIFIERS :variables which are named,defined,declared and assigned by the user/programmer.
+    There are certain rules for creating identifiers like it should not start with a number,
+    We can only use _,$ as special symbols in defining a identifier
+
+
+JS also provides us with certain string operations like in JAVA.
+let s="Sindhu"
+document.write(s.length,"<br>")
+document.write(s.toUpperCase(),"<br>")
+document.write(s.toLowerCase(),"<br>")
+
+for more such operations refer online https://www.w3schools.com/js/js_string_methods.asp 
+
+//boolean
+var a=true
+var b=false
+document.write(typeof a)
+
+Object datatype is imp in js
+we can store key value pairs in object
+var ob={'username':'Sindhuja'}
+document.write(typeof ob,"<br>")
+document.write(ob['username']) ::o/p--Sindhuja
+
+
+//array
+var nums=[1,2,3,4,5]
+document.write(typeof nums,"<br>")//it is a type of object
+document.write(nums[3],"<br>")
+document.write(nums.length,"<br>")
+
+//CONTROL STATEMENTS-if,if else,if else if else,..
+
+var n=prompt("enter a number")//to take user input
+var a=parseInt(n)
+if(a>0)
+{
+    document.write("positive")
+}
+else if(a<0)
+{
+    document.write("negative")
+}
+else{
+    document.write("zero")
+}
+
+
+//LOOPS
+
+for loop
+start point:initialization
+ending of the loop
+increment/decrement
+start:1
+end:<=10
+step:1 step
+
+    --take a var i
+for (let i = 0; i <=10; i++) {
+    document.write(i,"<br>")
+}
+51:01
