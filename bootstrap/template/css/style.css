@@ -1,5 +1,5 @@
 body {
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Playfair Display', serif;
 }
 .header {
     height: 90vh;
@@ -13,4 +13,18 @@ body {
 .h-100 {
     height: 100%;
     width: 100%;
+}
+
+.btn{
+    border-radius: 10rem;
+    padding: 5px 15px 10px;
+}
+
+.message{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.myicon{
+    font-size: 60px;
+    padding: 20px;
 }
